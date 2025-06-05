@@ -1,0 +1,55 @@
+body{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.images{
+    position:relative;
+    left:50px;
+
+}
+
+.option{
+    padding-top: 25px;
+}
+
+.but,.butt{
+    margin-right:10px;
+    height:30px;
+    border:none;
+    background-color:white;
+    font-size: 18px;
+}
+
+.searchbar{
+    width:400px;
+    height:30px;
+    position:relative;
+    top:25px;
+    text-align: center;
+}
+
+.Profile{
+    padding-top: 25px;
+    padding-right:20px;
+}
+
+.middle{
+    background-color: rgb(247, 241, 233);
+    padding-left:50px ;
+    padding-right: 50px;
+    padding-top: 4px;
+    justify-content: center;
+}
+
+.card{
+    background-color: rgb(24, 100, 24);
+    color: white;
+}
