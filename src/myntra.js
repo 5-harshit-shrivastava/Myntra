@@ -15,6 +15,7 @@ function App(){
     return (<>
         {/* header */}
          <Header />
+        <button>Sort By Price</button>
 
         {/* body */}
         <div className="middle" style={{display:"flex",gap:"10px" , flexWrap:"wrap"}}>
