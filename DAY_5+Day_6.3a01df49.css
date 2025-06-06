@@ -1,0 +1,59 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  justify-content: space-between;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.images {
+  position: relative;
+  left: 50px;
+}
+
+.option {
+  padding-top: 25px;
+}
+
+.but, .butt {
+  background-color: #fff;
+  border: none;
+  height: 30px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.searchbar {
+  text-align: center;
+  width: 400px;
+  height: 30px;
+  position: relative;
+  top: 25px;
+}
+
+.Profile {
+  padding-top: 25px;
+  padding-right: 20px;
+}
+
+.middle {
+  background-color: #f7f1e9;
+  justify-content: center;
+  padding-top: 4px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.card {
+  color: #fff;
+  background-color: #186418;
+}
+
+button {
+  height: 50px;
+}
+/*# sourceMappingURL=DAY_5+Day_6.3a01df49.css.map */
