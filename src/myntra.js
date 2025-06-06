@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState} from "react";
 import ReactDOM from "react-dom/client";
 
 import Card from "./components/card";
@@ -12,10 +12,24 @@ import {greet,meet} from "./utilis/dummy.js";
 // footer
 
 function App(){
+    let [A,setA]=useState(arr);
+
+    function sortArray(){
+        A.sort((a,b)=>a.price-b.price);
+        setA([...A]);
+    }
+
+    function priceAbove500(){
+        const B=arr.filter((value)=>value.price>499);
+        setA(B);
+    }
+    
     return (<>
         {/* header */}
          <Header />
-        <button>Sort By Price</button>
+         <button onClick={sortArray}>Sort By Price</button>
+         <button onClick={priceAbove500}>Price Above 499</button>
+
 
         {/* body */}
         <div className="middle" style={{display:"flex",gap:"10px" , flexWrap:"wrap"}}>
@@ -34,7 +48,7 @@ function App(){
             <Card cloth="Slippers" offer="25-50% off" price="200" img="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQlXil4IGDKyp63vP5niPal1CZnFDzeaBcys70xDWyWsCcxozGf7XNZgCL_P43t4Nvh62vkoAA4fHTYhJ3jzG4k-xto1bDdFzHH5sZ07cZaegfjD8JXzMV0SA"/>
             
             {
-                arr.map((value,index)=><Card key={index} cloth={value.cloth} offer={value.offer} price={value.price} img={value.img}/>)
+                A.map((value,index)=><Card key={index} cloth={value.cloth} offer={value.offer} price={value.price} img={value.img}/>)
             }
         </div>
 
