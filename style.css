@@ -53,3 +53,7 @@ body{
     background-color: rgb(24, 100, 24);
     color: white;
 }
+
+button{
+    height:50px;
+}
